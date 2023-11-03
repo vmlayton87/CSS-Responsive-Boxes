@@ -1,3 +1,52 @@
 body {
   background: blanchedalmond;
+  margin:0;
+}
+.container {
+  display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding:0.5em;
+    gap: 0.5em;
+}
+.a, .c {
+  height: 10vh;
+}
+
+.b {
+  height: 80vh;
+}
+
+.a, .b, .c {
+  padding: 0.5em;
+  border: .25em ridge  #a058f1;
+}
+
+@media (min-width:500px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height:100vh;
+    gap:.5em;
+  }
+
+  .a {
+    width: 100%;
+    height: 15vh;
+  }
+  
+  .b, .c {
+    height: 75vh;
+  }
+
+  .b {
+    flex-grow:2;
+  }
+
+  .c {
+    flex-grow:1;
+  }
 }
